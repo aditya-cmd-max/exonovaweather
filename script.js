@@ -374,7 +374,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const month = date.getMonth();
         const day = date.getDate();
         
-        // Simplified calculation
+        // Simplified calculatio
         const c = (year % 100) * 0.25;
         const e = (month + 1) * 0.6;
         const phaseIndex = Math.floor((day + c + e) % 8);
