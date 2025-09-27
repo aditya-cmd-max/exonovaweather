@@ -662,6 +662,46 @@
         <div class="weather-bg" id="weather-bg"></div>
         <div class="bg-overlay"></div>
 
+        
+        
+        <!-- Splash Screen Start -->
+<div id="splash-screen" style="position:fixed; top:0; left:0; width:100%; height:100%; background-color:#000; display:flex; align-items:center; justify-content:center; flex-direction:column; z-index:9999; color:#fff; font-family:'Product Sans', sans-serif;">
+  <img src="https://aditya-cmd-max.github.io/exonovaweather/skycast.png" alt="SkyCast Pro Logo" style="width:140px; height:140px; margin-bottom:20px; animation: scaleUp 2s forwards;">
+  <h1 style="font-size:2.5em; letter-spacing:2px; margin:0;">SkyCast Pro</h1>
+</div>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Product+Sans:wght@400;700&display=swap');
+
+@keyframes scaleUp {
+  0% { transform: scale(0); }
+  50% { transform: scale(1.2); }
+  100% { transform: scale(1); }
+}
+
+#splash-screen {
+  animation: fadeOut 2s forwards;
+}
+
+@keyframes fadeOut {
+  0% { opacity: 1; }
+  80% { opacity: 1; }
+  100% { opacity: 0; display: none; }
+}
+</style>
+
+<script>
+setTimeout(() => {
+  const splash = document.getElementById('splash-screen');
+  if(splash) splash.style.display = 'none';
+}, 2000);
+</script>
+<!-- Splash Screen End -->
+        
+        
+        
+        
+        
         <!-- Main App -->
         <div class="weather-app">
             <!-- Header -->
